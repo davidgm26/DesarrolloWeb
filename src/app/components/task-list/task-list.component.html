@@ -1,0 +1,5 @@
+<p *ngFor="let tarea of listaDeTareas"> {{tarea}}</p>
+
+<input type="text" [(ngModel)]="tarea">
+
+<button (click)="agregarTarea(tarea)">Agregar</button>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { LandingComponent } from './landing/landing.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 
 

@@ -1,0 +1,5 @@
+<input type="number" [(ngModel)]="inicio">
+<button type="button" (click)="establecerInicio(inicio)">Añadir tiempo inicio </button>
+<button type="button" (click)="temporizador()">Iniciar</button>
+<button type="button" (click)="pausar()">Parar</button>
+<p *ngIf="contador">{{inicio}}</p>
