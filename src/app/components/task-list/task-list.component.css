@@ -1,0 +1,11 @@
+.cuerpo{
+    text-align: center;
+
+    && input{
+        height: 20px;
+        width: 250px;
+    }
+    && .agregar{
+        background-color: #4CAF50;
+    }
+}

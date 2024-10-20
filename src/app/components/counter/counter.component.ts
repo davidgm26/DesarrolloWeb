@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { isEmpty } from 'rxjs';
 
 
 @Component({
@@ -17,6 +18,7 @@ export class CounterComponent {
   minutos!: String;
   segundos!: String;
   intervaloTiempo!: any;
+  encendido!: boolean;
 
   ngOnInit(): void {
       this.actualizarHora()
@@ -24,7 +26,10 @@ export class CounterComponent {
   }
 
   establecerIntervalo(num:number){
-    this.intervaloTiempo = setInterval(() => this.actualizarHora(),num);
+    if(!this.encendido){
+      this.encendido = true
+      this.intervaloTiempo = setInterval(() => this.actualizarHora(),num);
+    }
   }
   
   actualizarHora(){
@@ -37,6 +42,7 @@ export class CounterComponent {
 
   pararIntervalo(){
     clearInterval(this.intervaloTiempo)
+    this.encendido = false
   }
 
   ngOnDestroy(): void {

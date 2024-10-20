@@ -1,5 +1,13 @@
-<p *ngFor="let tarea of listaDeTareas"> {{tarea}}</p>
 
-<input type="text" [(ngModel)]="tarea">
+<div class="cuerpo">
+    <h1>Añada sus tareas pendientes</h1>
 
-<button (click)="agregarTarea(tarea)">Agregar</button>
+    <p *ngFor="let tarea of listaDeTareas"> {{tarea}}</p>
+
+    <input type="text" [(ngModel)]="tarea">
+
+    <button (click)="agregarTarea(tarea)" class="agregar">Agregar</button>
+
+    <button (click)="eliminarTarea()" class="borrar">Borrar ultima tarea</button>
+
+</div>

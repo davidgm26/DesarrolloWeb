@@ -1,0 +1,14 @@
+.cuerpo {
+    text-align: center;
+    align-items: center;
+    display: block;
+    && input{
+        margin-top: 15px;
+        border: 2px black solid;
+        width: 270px;
+        height:50px;
+    }
+    && .encabezado{
+        font-size: xx-large;
+    }
+}

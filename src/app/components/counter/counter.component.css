@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('../../assets/fonts/DS-DIGI.TTF')
+}
+
+.cuerpo {
+    margin: auto;
+    text-align: center;
+
+    && p {
+        margin: auto;
+        font-family: 'Digital';
+        color: red;
+        font-size: 7em;
+        width: 50%;
+        background-color: black;
+    }
+
+    && button{
+        border: 1px solid black;
+        margin: 5px;
+        height: 50px;
+        width: 200px;
+    }
+    .stop{
+        background-color: red;
+        color: aliceblue;
+    }
+    .start{
+        background-color: green;
+        color: aliceblue;
+    }
+    && button:hover{
+        background-color: aqua;
+    }
+}
+
+
