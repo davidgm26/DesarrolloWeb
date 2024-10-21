@@ -1,0 +1,39 @@
+.cuerpo {
+    height: 100%;
+    margin: auto;
+    text-align: center;
+
+    && .encabezado {
+        margin: auto;
+    }
+
+    && .temporizador {
+        margin: auto;
+
+        && button {
+            border: 1px solid black;
+            margin: 5px;
+            height: 50px;
+            width: 10%;
+        }
+
+        && .stop {
+            background-color: red;
+        }
+
+        && .start {
+            background-color: green;
+        }
+
+        && button:hover {
+            border: 1px solid black;
+            margin: 5px;
+            background-color: aqua;
+            height: 50px;
+            width: 10%;
+        }
+
+    }
+
+
+}

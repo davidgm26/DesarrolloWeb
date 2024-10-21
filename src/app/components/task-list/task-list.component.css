@@ -8,4 +8,7 @@
     && .agregar{
         background-color: #4CAF50;
     }
+    && .borrar{
+        background-color: #f44336;
+    }
 }

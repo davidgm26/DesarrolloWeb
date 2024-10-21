@@ -1,8 +1,6 @@
 nav {
-    border: red 1px solid;
     background-color: rgb(36, 69, 255);
-
-    && ul {
+        && ul {
         display: flex;
         flex-direction: row;
         margin: 5px;

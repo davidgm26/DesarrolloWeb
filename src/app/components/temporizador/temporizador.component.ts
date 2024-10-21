@@ -17,28 +17,25 @@ export class TemporizadorComponent {
   intervalo!: any;
 
   temporizador() {
-  this.intervalo = setInterval(() => this.descontador(), 1000)
+    if(!this.contador){
+      this.intervalo = setInterval(() => this.descontador(), 1000)
+    }
   }
 
   descontador() {
     this.inicio--;
-    console.log(this.inicio);
     if(this.inicio == 0 ){
-      clearInterval(this.intervalo)
+      this.pausar()
     }
   }
 
   establecerInicio(num: number) {
-    console.log(this.contador);
     this.inicio = num;
     this.contador = !this.contador;
-    console.log(this.contador);
   }
 
   pausar() {
-    clearInterval(this.intervalo)
-    console.log(this.inicio);
-    
+    clearInterval(this.intervalo)  
   }
 
 }
