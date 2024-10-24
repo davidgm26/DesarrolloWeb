@@ -7,6 +7,7 @@ import { TemporizadorComponent } from './components/temporizador/temporizador.co
 import { ListaComentariosComponent } from './components/lista-comentarios/lista-comentarios.component';
 import { ListaProductoComponent } from './components/lista-producto/lista-producto.component';
 import { CalculadoraComponent } from './components/calculadora/calculadora.component';
+import { TicketCompraComponent } from './components/ticket-compra/ticket-compra.component';
 
 
 export const routes: Routes = [
@@ -19,6 +20,7 @@ export const routes: Routes = [
     {path: 'comentarios', component: ListaComentariosComponent},
     {path: 'productos',component: ListaProductoComponent},
     {path: 'calculadora', component:CalculadoraComponent},
+    {path: 'carrito', component:TicketCompraComponent},
     {path: '**', redirectTo: 'inicio', pathMatch: 'full'},
     {path: '',redirectTo:'inicio', pathMatch:'full'}
     
