@@ -4,7 +4,8 @@ import { SaludoComponent } from './components/saludo/saludo.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { TemporizadorComponent } from './components/temporizador/temporizador.component';
-import { ListaDeComentariosComponent } from './lista-de-comentarios/lista-de-comentarios.component';
+import { ListaComentariosComponent } from './components/lista-comentarios/lista-comentarios.component';
+
 
 export const routes: Routes = [
 
@@ -13,7 +14,7 @@ export const routes: Routes = [
     {path: 'listaDeTareas', component: TaskListComponent},
     {path: 'temporizador', component: TemporizadorComponent},
     {path: 'inicio'  , component: LandingComponent},
-    {path: 'comentarios', component: ListaDeComentariosComponent},
+    {path: 'comentarios', component: ListaComentariosComponent},
     {path: '**', redirectTo: 'inicio', pathMatch: 'full'},
     {path: '',redirectTo:'inicio', pathMatch:'full'}
     
