@@ -1,5 +1,42 @@
-<div>
-    <p *ngFor="let producto of catalogo">
-        {{producto.id}}
-    </p>
+<div class="cuerpo">
+    <div class="catalogo">
+        <div *ngFor="let producto of catalogo" class="hijo">
+            <p class="hijo">{{producto.id}}</p>
+            <p class="hijo">{{producto.name}}</p>
+            <p class="hijo">{{producto.descripcion}}</p>
+            <p class="hijo">{{producto.precio}} €</p>
+            <button (click)="agregarProductoCarro(producto)" class="button aceptar">
+                +
+            </button>
+            <button (click)="eliminarProductoCarro(producto)" class="button eliminar">
+                -
+            </button>
+        </div>
+    </div>
+    <div class="ticket">
+        <table>
+            <tr class="encabezado">
+                <td>Producto</td>
+                <td>Unidades</td>
+                <td>Subtotal</td>
+            </tr>
+            <ng-container *ngFor="let linea of carroCompra">
+                <tr *ngIf="linea.cantidad > 0">
+                    <td>{{linea.producto.name}}</td>
+                    <td>{{linea.cantidad}}</td>
+                    <td>{{linea.valorTotal | number :'1.2-2'}} €</td>
+    
+                </tr>
+                
+            </ng-container>
+        </table>
+            
+
+        <p *ngIf="totalCompra > 0">
+            {{totalCompra | number : '1.2-2'}} €
+
+        </p>
+
+    </div>
+
 </div>
