@@ -1,4 +1,6 @@
-<h1>Visor de productos</h1>
-<div *ngFor="let producto of listaProductos">
-<app-tarjeta-producto [producto]="producto"></app-tarjeta-producto>
+<div class="cuerpo">
+    <h1>Visor de productos</h1>
+    <div class="catalogo">
+        <app-tarjeta-producto *ngFor="let producto of listaProductos" [producto]="producto"></app-tarjeta-producto>
+    </div>
 </div>

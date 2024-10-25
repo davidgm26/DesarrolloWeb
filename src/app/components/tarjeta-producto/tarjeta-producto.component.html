@@ -1,11 +1,10 @@
 <div class="cuerpo">
-<h1>
-    {{producto.name}}
-</h1>
-<p>
-    {{producto.descripcion}}
-</p>
-<p>
-    {{producto.precio}} €
-</p>
+    <div class="derecha">
+        <img [src]="producto.img" alt="Producto">
+    </div>
+    <div class="izquierda">
+        <h2>{{producto.name}}</h2>
+        <p class="precio">{{producto.precio}} €</p>
+        <p>{{producto.descripcion}}</p>
+    </div>
 </div>

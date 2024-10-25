@@ -1,14 +1,80 @@
-.cuerpo{
-    text-align: center;
+.cuerpo {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 
-    && input{
-        height: 20px;
-        width: 250px;
+    && h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.8em;
     }
-    && .agregar{
+
+    && p {
+        font-size: 1.2em;
+        color: #555;
+        margin: 10px 0;
+        padding: 8px;
+        border-left: 4px solid #4CAF50;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    && input {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-top: 10px;
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+        font-size: 1em;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    && .agregar,
+    .borrar {
         background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+        width: 100%;
     }
-    && .borrar{
+
+    .borrar {
         background-color: #f44336;
     }
+
+}
+
+.cuerpo:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+input:focus {
+    border-color: #2E7D32;
+}
+
+
+
+.agregar:hover {
+    background-color: #388E3C;
+}
+
+.borrar:hover {
+    background-color: #c62828;
 }

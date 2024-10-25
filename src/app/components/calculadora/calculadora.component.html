@@ -1,12 +1,14 @@
-<div>
-    <h1>
-        Soy tu calculadora
-    </h1>
-    <input type="number" [(ngModel)]="num1">
-    <input type="number" [(ngModel)]="num2">
-    <button type="button" (click)="suma()"> + </button>
-    <button type="button" (click)="resta()"> - </button>
-    <button type="button" (click)="multiplicacion()"> x </button>
-    <button type="button" (click)="division()"> / </button>
-    <p>{{resultado}}</p>
+<div class="cuerpo">
+    <div>
+        <h1>
+            Soy tu calculadora
+        </h1>
+        <p> resultado: {{resultado | number : '1.2-2' }}</p>
+        <input type="number" [(ngModel)]="num1">
+        <input type="number" [(ngModel)]="num2">
+        <button type="button" (click)="suma()"> + </button>
+        <button type="button" (click)="resta()"> - </button>
+        <button type="button" (click)="multiplicacion()"> x </button>
+        <button type="button" (click)="division()"> / </button>
+    </div>
 </div>

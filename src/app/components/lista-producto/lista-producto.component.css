@@ -1,0 +1,14 @@
+.cuerpo {
+    margin: auto;
+    text-align: center;
+    && h1{
+        text-align: center;
+    }
+    && .catalogo{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+    }
+}

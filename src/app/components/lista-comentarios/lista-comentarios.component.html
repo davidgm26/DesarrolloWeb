@@ -1,9 +1,7 @@
 <app-agregar-comentarios (enviarComentario)="agregarComentarioALista($event)"></app-agregar-comentarios>
-<button (click)="borrarComentarioLista()" class="borrar">Borrar ultima tarea</button>
-
+<button (click)="borrarComentarioLista()" class="borrar">Borrar última tarea</button>
 <div class="cuerpo" *ngFor="let commnt of listaComentarios">
     <p class="comentario">
         {{commnt}}
     </p>
 </div>
-

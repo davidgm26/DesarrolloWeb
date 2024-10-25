@@ -1,10 +1,7 @@
 <div class="cuerpo">
     <div class="catalogo">
         <div *ngFor="let producto of catalogo" class="hijo">
-            <p class="hijo">{{producto.id}}</p>
-            <p class="hijo">{{producto.name}}</p>
-            <p class="hijo">{{producto.descripcion}}</p>
-            <p class="hijo">{{producto.precio}} €</p>
+            <app-tarjeta-producto [producto]="producto"></app-tarjeta-producto>
             <button (click)="agregarProductoCarro(producto)" class="button aceptar">
                 +
             </button>
@@ -32,7 +29,7 @@
         </table>
             
 
-        <p *ngIf="totalCompra > 0">
+        <p *ngIf="totalCompra > 0" class="total">
             {{totalCompra | number : '1.2-2'}} €
 
         </p>
